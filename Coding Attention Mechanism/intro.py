@@ -4,7 +4,6 @@ import torch
 
 #? Self attention is a mechanism that lets every word in an sentence see all other words to determine how important they are when building its representation.
 
-import torch
 inputs = torch.tensor(
   [[0.43, 0.15, 0.89], 
    [0.55, 0.87, 0.66],
