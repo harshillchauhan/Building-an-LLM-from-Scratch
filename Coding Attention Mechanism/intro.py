@@ -61,6 +61,8 @@ print("Sum:", attn_weights_2.sum())
 #? OUTPUT : Attention weights: tensor([0.1385, 0.2379, 0.2333, 0.1240, 0.1082, 0.1581])
 #?          Sum: tensor(1.)
 
+#? Context Vector (Z) is calculated by multiplying the embedded input tokens with the corresponding attention weights and then summing the resultant vector.
+
 #? Calculating the CONTEXT VECOTOR Z^2
 query = inputs[1]
 context_vec_2 = torch.zeros(query.shape)
