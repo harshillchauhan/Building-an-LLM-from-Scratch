@@ -86,3 +86,7 @@ print_gradients(model_with_shortcut, sample_input)
 #* The last layer (layer 4) still has a larger gradient than the other layers. However, the gradient value syabelizes as we progress toward the first layer (layer 0) and doesn't shrink to a vanishingly small value.
 
 #! CONCLUSION : Shortcut connections are important for overcoming the limitations posed by the vanishing gradient problem in neural networks.
+
+#!NOTE : Shortcut or residual connection works by following : 
+#* Instead of only passing data through a complicated transformation, we also add the original input back to the output.
+#* Doing this enables the layer to learn only the residual (extra part to add) and not the entore transformation from scratch.
